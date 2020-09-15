@@ -1,0 +1,50 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 9.5.0-10.4.6\n",
+            "disableLocalization": true,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "9.5.0-9.5.99",
+            "version": "1.0.4"
+        },
+        "extensionKey": "legalwebcookie",
+        "name": "LegalWebCookie",
+        "originalExtensionKey": "legalwebcookie",
+        "originalVendorName": "Legalweb",
+        "persons": [
+            {
+                "company": "Legalweb",
+                "email": "office@legalweb.io",
+                "name": "Legalweb.io",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "Cookie => list,imprint,term",
+                    "noncacheableActions": "Cookie => list,imprint,term",
+                    "switchableActions": "Cookie->list; Cookie->imprint; Cookie->term"
+                },
+                "description": "",
+                "key": "pi1",
+                "name": "LegalWebCookie"
+            }
+        ],
+        "vendorName": "Legalweb"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2020-08-21 09:25",
+        "extension_builder_version": "9.10.2",
+        "be_user": " (1)"
+    }
+}

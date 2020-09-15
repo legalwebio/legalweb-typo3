@@ -1,0 +1,28 @@
+{
+    "name": "legalweb/legalwebcookie",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "authors": [
+        {
+            "name": "Legalweb.io",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "~9.5 | ~10.4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Legalweb\\Legalwebcookie\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Legalweb\\Legalwebcookie\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "legalweb/legalwebcookie": "self.version",
+        "typo3-ter/legalwebcookie": "self.version"
+    }
+}

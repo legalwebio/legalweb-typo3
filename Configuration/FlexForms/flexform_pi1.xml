@@ -1,0 +1,49 @@
+<T3DataStructure>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Function</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<switchableControllerActions>
+						<TCEforms>
+							<label>Select function</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">Impressum</numIndex>
+										<numIndex index="1">Cookie-&gt;imprint</numIndex>
+									</numIndex>
+									<numIndex index="1">
+										<numIndex index="0">Datenschutzerklärung</numIndex>
+										<numIndex index="1">Cookie-&gt;dpStatement</numIndex>
+									</numIndex>
+									<numIndex index="2">
+										<numIndex index="0">AGB</numIndex>
+										<numIndex index="1">Cookie-&gt;contractTerms</numIndex>
+									</numIndex>
+									<numIndex index="3">
+										<numIndex index="0">AGB, Widerrufs und Datenschutz-Klausel für den Checkout</numIndex>
+										<numIndex index="1">Cookie-&gt;contractCheckout</numIndex>
+									</numIndex>
+									<numIndex index="4">
+										<numIndex index="0">Widerrufs-Verzicht-Klausel für digitale Produkte</numIndex>
+										<numIndex index="1">Cookie-&gt;contractWithDrawalDigital</numIndex>
+									</numIndex>
+									<numIndex index="5">
+										<numIndex index="0">Widerrufs-Verzicht-Klausel für Dienstleistungen</numIndex>
+										<numIndex index="1">Cookie-&gt;contractWithDrawalService</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</switchableControllerActions>
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>
