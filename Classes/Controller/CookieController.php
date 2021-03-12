@@ -61,6 +61,13 @@ class CookieController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
             case Language::IT:
                 $value = $data->services->contractwithdrawalservice->it;
                 break;
+            case Language::ES:
+                $value = $data->services->contractwithdrawalservice->es;
+                break;
+            case Language::HU:
+                $value = $data->services->contractwithdrawalservice->hu;
+                break;
+
 
             case Language::FR:
                 $value = $data->services->contractwithdrawalservice->fr;
@@ -87,6 +94,14 @@ class CookieController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
 
             case Language::IT:
                 $value = $data->services->contractwithdrawaldigital->it;
+                break;
+
+            case Language::HU:
+                $value = $data->services->contractwithdrawaldigital->hu;
+                break;
+
+            case Language::ES:
+                $value = $data->services->contractwithdrawaldigital->es;
                 break;
 
             case Language::FR:
@@ -116,6 +131,18 @@ class CookieController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
                 $value = $data->services->contractcheckout->it;
                 break;
 
+            case Language::HU:
+                $value = $data->services->contractcheckout->hu;
+                break;
+            case Language::ES:
+                $value = $data->services->contractcheckout->es;
+                break;
+
+
+            case Language::IT:
+                $value = $data->services->contractcheckout->it;
+                break;
+
             case Language::FR:
                 $value = $data->services->contractcheckout->fr;
                 break;
@@ -140,12 +167,20 @@ class CookieController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
                 $value = $data->services->contractterms->en;
                 break;
 
+            case Language::FR:
+                $value = $data->services->contractterms->fr;
+                break;
+
+            case Language::ES:
+                $value = $data->services->contractterms->es;
+                break;
+
             case Language::IT:
                 $value = $data->services->contractterms->it;
                 break;
 
-            case Language::FR:
-                $value = $data->services->contractterms->fr;
+            case Language::HU:
+                $value = $data->services->contractterms->hu;
                 break;
             default:
                 $value = $data->services->contractterms->de;
@@ -171,6 +206,14 @@ class CookieController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
 
             case Language::IT:
                 $value = $data->services->dpstatement->it;
+                break;
+
+            case Language::ES:
+                $value = $data->services->dpstatement->es;
+                break;
+
+            case Language::HU:
+                $value = $data->services->dpstatement->hu;
                 break;
 
             case Language::FR:
@@ -199,11 +242,15 @@ class CookieController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
             case Language::EN:
                 $value = $data->services->imprint->en;
                 break;
-
+            case Language::HU:
+                $value = $data->services->imprint->hu;
+                break;
             case Language::IT:
                 $value = $data->services->imprint->it;
                 break;
-
+            case Language::ES:
+                $value = $data->services->imprint->es;
+                break;
             case Language::FR:
                 $value = $data->services->imprint->fr;
                 break;
@@ -212,6 +259,7 @@ class CookieController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
                 $value = $data->services->imprint->de;
                 break;
         }
+
         
         $this->view->assign('value' , $value);
     }
@@ -228,14 +276,18 @@ class CookieController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
 
         /** @var PageRenderer $pageRenderer */
         $pageRenderer = $this->objectManager->get(PageRenderer::class);
-        $pageRenderer->addCssInlineBlock('dppopupcss', $data->services->dppopupcss , false , true );
+        \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($this->settings);
+        if ( (int) $this->settings["showPopup"] ) {
+            $pageRenderer->addCssInlineBlock('dppopupcss', $data->services->dppopupcss , false , true );
 
-        $this->view->assign ('spDsgvoGeneralConfig' ,  json_encode ( $data->services->dppopupconfig->spDsgvoGeneralConfig ) );
-        $this->view->assign ('spDsgvoIntegrationConfig' ,  json_encode ( $data->services->dppopupconfig->spDsgvoIntegrationConfig ) );
-        $this->view->assign ('dppopupjs' ,   ( $data->services->dppopupjs ) );
+            $this->view->assign ('spDsgvoGeneralConfig' ,  json_encode ( $data->services->dppopupconfig->spDsgvoGeneralConfig ) );
+            $this->view->assign ('spDsgvoIntegrationConfig' ,  json_encode ( $data->services->dppopupconfig->spDsgvoIntegrationConfig ) );
 
+            $this->view->assign('dppopupjs', ($data->services->dppopupjs));
+            $this->view->assign('popup', $data->services->dppopup->de);
+        }
 
-        $this->view->assign ('popup' ,  $data->services->dppopup->de );
+        $this->view->assign ('sealofApproval', $data->services->dppopup->guetesiegel );
 
 
     }

@@ -13,8 +13,10 @@ plugin.tx_legalwebcookie_pi1 {
         storagePid =
     }
     settings {
-        # cat=plugin.tx_legalwebcookie_pi1//a; type=string; label= Guid: the GUID
+        # cat=plugin.tx_legalwebcookie_pi1//a; type=string; label= Guid: The GUID
         guid =
+        # cat=plugin.tx_legalwebcookie_pi1//a; type=string; label= Show Popup: Show Popup
+        showPopup = 1
         
     }    
 }

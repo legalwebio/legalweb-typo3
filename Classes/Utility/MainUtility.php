@@ -15,7 +15,7 @@ class MainUtility {
         return $date;
     }
     public static function host () {
-        return $_SERVER['HTTP_HOST'];
+        return "$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
     }
 
 }

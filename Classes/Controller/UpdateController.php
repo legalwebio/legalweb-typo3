@@ -26,22 +26,30 @@ class UpdateController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
     }
 
 
+    /**
+     * action list
+     *
+     * @return void
+     */
+    public function listAction()
+    {
+        $result =  $this->jsonFileService->updateHandler();
+        //  \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($result);
+
+        $this->view->assign("result" , $result);
+
+
+    }
+
     public function executeAction () {
 
-        $result =  $this->jsonFileService->fileHandler();
+        $result =  $this->jsonFileService->updateHandler();
+        
 
-        //     http://p549567.webspaceconfig.de/?tx_legealwebcookie_pi1[action]=execute&tx_legealwebcookie_pi1[controller]=Update&type=1645
-
-        $path = \TYPO3\CMS\Core\Utility\GeneralUtility::getFileAbsFileName("EXT:legalwebcookie/Resources/Public/Json/") ;
+        exit;
 
 /*
-        $resourceFactory = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Resource\ResourceFactory::class);
-        $defaultStorage = $resourceFactory->getDefaultStorage();
-
-        $folder = $defaultStorage->getFolder("/typo3conf/ext/legalwebcookie/Resources/Public/Json/");
-        $files = $defaultStorage->getFilesInFolder($folder);
-
-*/
+        $path = \TYPO3\CMS\Core\Utility\GeneralUtility::getFileAbsFileName("EXT:legalwebcookie/Resources/Public/Json/") ;
 
         $files =  array_reverse( GeneralUtility::getFilesInDir($path) );
         $index = 0;
@@ -59,20 +67,6 @@ class UpdateController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
         }
 
         exit;
-        /*
-        $response = [];
-        if ($result->getStatusCode() === 200) {
-            
-            $response = [
-                'success' => 1
-            ];
-        }
-        else {
-            $response = ['success' => 0 ];
-        }
-
-
-        return json_encode($response);
 */
     }
 

@@ -24,6 +24,7 @@ plugin.tx_legalwebcookie_pi1 {
     }
     settings{
         guid = {$plugin.tx_legalwebcookie_pi1.settings.guid}
+        showPopup = {$plugin.tx_legalwebcookie_pi1.settings.showPopup}
 
     }
 
