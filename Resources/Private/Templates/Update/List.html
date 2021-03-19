@@ -15,23 +15,35 @@ Otherwise your changes will be overwritten the next time you save the extension 
 <f:section name="content">
 <f:layout name="Backend"></f:layout>
     <f:flashMessages />
-    <p>Data updated on <f:format.date date="now" format="d.m.y"></f:format.date></p>
-    Version {result.lw_api.version}<br>
+    <p>The last data update of the API Data was made on <f:format.date date="now" format="d.m.y"></f:format.date></p>
+    The current version of the API is{result.lw_api.version}<br>
 <br>
-    <p>Following services are loaded/activated:<br>
+    <p><strong>Following services are loaded/activated:</strong><br>
+	<ul>
     <f:for each="{result.services}" key="service" as="item">
         <f:switch expression="{service}">
-            <f:case value="imprint">Imprint<br></f:case>
-            <f:case value="dpstatement">Privacy Policy<br></f:case>
-            <f:case value="contractterms">Contract Terms<br></f:case>
-            <f:case value="contractcheckout">Contract Checkout<br></f:case>
-            <f:case value="contractwithdrawal">Contract Withdrawal<br></f:case>
-            <f:case value="contractwithdrawaldigital">Contract Withdrawal (Digital Products)<br></f:case>
-            <f:case value="contractwithdrawalservice">Contract Withdrawal (Services)<br></f:case>
+            <f:case value="imprint"><li>Imprint</li></f:case>
+            <f:case value="dpstatement"><li>Privacy Policy</li></f:case>
+            <f:case value="contractterms"><li>Contract Terms</li></f:case>
+            <f:case value="contractcheckout"><li>Contract Checkout</li></f:case>
+            <f:case value="contractwithdrawal"><li>Contract Withdrawal</li></f:case>
+            <f:case value="contractwithdrawaldigital"><li>Contract Withdrawal (Digital Products)</li></f:case>
+            <f:case value="contractwithdrawalservice"><li>Contract Withdrawal (Services)</li></f:case>
             <f:defaultCase></f:defaultCase>
         </f:switch>
 
     </f:for>
+	</ul>
     </p>
+	<p>
+	<strong>Important:</strong><br/>
+To be able to use this plugin, you need a valid subscription to one of our services. <br />For cookie consent management and data protection, you need the data protection package. We also offer a AGB package, a seal package and much more. <br/>
+Visit <a href="https://legalweb.io/shop" style="font-weight:bold"> our shop </a> at <a href = "https://legalweb.io/shop" style = "font-weight: bold"> https://legalweb.io/shop </a> to purchase a subscription.
+The settings are to be made in the constant editor under "Template" (PLUGIN.TX_LEGALWEBCOOKIE)
+	</p>
+	<p>
+	<strong>Support:</strong><br/>
+	For questions you can contact us by our support methods. You find them here: <a  href = "https://legalweb.io/support" style = "font-weight: bold">https://legalweb.io/support/</a>
+	</p>
 </f:section>
 </html>
