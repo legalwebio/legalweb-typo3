@@ -15,8 +15,23 @@ Otherwise your changes will be overwritten the next time you save the extension 
 <f:section name="content">
 <f:layout name="Backend"></f:layout>
     <f:flashMessages />
-    <p>Daten wurden erfolgreich aktualisiert am <f:format.date date="now" format="d.m.y"></f:format.date></p>
-    {result.lw_api.mode}<br> {result.lw_api.version}
+    <p>Data updated on <f:format.date date="now" format="d.m.y"></f:format.date></p>
+    Version {result.lw_api.version}<br>
+<br>
+    <p>Following services are loaded/activated:<br>
+    <f:for each="{result.services}" key="service" as="item">
+        <f:switch expression="{service}">
+            <f:case value="imprint">Imprint<br></f:case>
+            <f:case value="dpstatement">Privacy Policy<br></f:case>
+            <f:case value="contractterms">Contract Terms<br></f:case>
+            <f:case value="contractcheckout">Contract Checkout<br></f:case>
+            <f:case value="contractwithdrawal">Contract Withdrawal<br></f:case>
+            <f:case value="contractwithdrawaldigital">Contract Withdrawal (Digital Products)<br></f:case>
+            <f:case value="contractwithdrawalservice">Contract Withdrawal (Services)<br></f:case>
+            <f:defaultCase></f:defaultCase>
+        </f:switch>
 
+    </f:for>
+    </p>
 </f:section>
 </html>

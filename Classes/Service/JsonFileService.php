@@ -119,7 +119,13 @@ class JsonFileService {
     public function updateHandler () {
         $this->deleteResources();
         $this->setResourceData($this->loadService());
-        return $this->getResourceData();
+        $file = $this->getFilePath();
+
+        $content = file_get_contents( $file );
+
+        $response = json_decode($content , true );
+
+        return $response;
     }
 
 

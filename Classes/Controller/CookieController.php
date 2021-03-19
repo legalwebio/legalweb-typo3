@@ -231,7 +231,6 @@ class CookieController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
     public function imprintAction () : void {
 
        $data = $this->jsonFileService->fileHandler();
-
        $isoCode = MainUtility::TFSE()->sys_language_isocode;
 
         switch ( $isoCode ) {
@@ -260,7 +259,7 @@ class CookieController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
                 break;
         }
 
-        
+
         $this->view->assign('value' , $value);
     }
 
@@ -276,14 +275,14 @@ class CookieController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
 
         /** @var PageRenderer $pageRenderer */
         $pageRenderer = $this->objectManager->get(PageRenderer::class);
-        \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($this->settings);
+
         if ( (int) $this->settings["showPopup"] ) {
             $pageRenderer->addCssInlineBlock('dppopupcss', $data->services->dppopupcss , false , true );
 
             $this->view->assign ('spDsgvoGeneralConfig' ,  json_encode ( $data->services->dppopupconfig->spDsgvoGeneralConfig ) );
             $this->view->assign ('spDsgvoIntegrationConfig' ,  json_encode ( $data->services->dppopupconfig->spDsgvoIntegrationConfig ) );
 
-            $this->view->assign('dppopupjs', ($data->services->dppopupjs));
+            $this->view->assign('dppopupjs', $data->services->dppopupjs );
             $this->view->assign('popup', $data->services->dppopup->de);
         }
 

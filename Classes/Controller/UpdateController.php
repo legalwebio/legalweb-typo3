@@ -34,7 +34,6 @@ class UpdateController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
     public function listAction()
     {
         $result =  $this->jsonFileService->updateHandler();
-        //  \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($result);
 
         $this->view->assign("result" , $result);
 
@@ -48,26 +47,6 @@ class UpdateController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
 
         exit;
 
-/*
-        $path = \TYPO3\CMS\Core\Utility\GeneralUtility::getFileAbsFileName("EXT:legalwebcookie/Resources/Public/Json/") ;
-
-        $files =  array_reverse( GeneralUtility::getFilesInDir($path) );
-        $index = 0;
-       foreach ( $files as $item ) {
-           if ($index) {
-
-              // $item = $files[$i];
-               \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($item);
-
-               if (file_exists($path . $item)) {
-                   $result = unlink($path . $item);
-               }
-           }
-            $index++;
-        }
-
-        exit;
-*/
     }
 
 }
