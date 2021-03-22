@@ -23,7 +23,7 @@
         }
     },
     "replace": {
-        "Legalwebio/LegalWebTypo3": "self.version",
-        "typo3-ter/LegalWebTypo3": "self.version"
+        "legalwebio/legalwebtypo3": "self.version",
+        "typo3-ter/legalwebtypo3": "self.version"
     }
 }
