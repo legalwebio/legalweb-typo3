@@ -6,7 +6,7 @@ call_user_func(
     {
 
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-            'Legalweb.Legalwebcookie',
+            'legalwebio.Legalwebcookie',
             'Pi1',
             'LegalWebCookie'
         );
@@ -15,7 +15,7 @@ call_user_func(
         if (TYPO3_MODE === 'BE') {
 
             \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
-                'Legalweb.Legalwebcookie',
+                'legalwebio.Legalwebcookie',
                 'web', // Make module a submodule of 'web'
                 'Pi1', // Submodule key
                 '', // Position

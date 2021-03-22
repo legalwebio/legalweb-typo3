@@ -1,5 +1,5 @@
 <?php
-namespace Legalweb\Legalwebcookie\Tests\Unit\Domain\Model;
+namespace legalwebio\Legalwebcookie\Tests\Unit\Domain\Model;
 
 /**
  * Test case.
@@ -9,14 +9,14 @@ namespace Legalweb\Legalwebcookie\Tests\Unit\Domain\Model;
 class ApiTest extends \TYPO3\TestingFramework\Core\Unit\UnitTestCase
 {
     /**
-     * @var \Legalweb\Legalwebcookie\Domain\Model\Api
+     * @var \legalwebio\Legalwebcookie\Domain\Model\Api
      */
     protected $subject = null;
 
     protected function setUp()
     {
         parent::setUp();
-        $this->subject = new \Legalweb\Legalwebcookie\Domain\Model\Api();
+        $this->subject = new \legalwebio\Legalwebcookie\Domain\Model\Api();
     }
 
     protected function tearDown()

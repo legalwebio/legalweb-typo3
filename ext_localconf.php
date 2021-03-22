@@ -6,7 +6,7 @@ call_user_func(
     {
 
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-            'Legalweb.Legalwebcookie',
+            'legalwebio.Legalwebcookie',
             'Pi1',
             [
                 'Cookie' => 'list, imprint, contractWithDrawalService, contractWithDrawalDigital, contractCheckout, contractTerms, dpStatement',

@@ -18,7 +18,7 @@
         "extensionKey": "legalwebcookie",
         "name": "LegalWebCookie",
         "originalExtensionKey": "legalwebcookie",
-        "originalVendorName": "Legalweb",
+        "originalVendorName": "legalwebio",
         "persons": [
             {
                 "company": "Legalweb",
@@ -39,7 +39,7 @@
                 "name": "LegalWebCookie"
             }
         ],
-        "vendorName": "Legalweb"
+        "vendorName": "legalwebio"
     },
     "wires": [],
     "log": {

@@ -1,8 +1,8 @@
 <?php
-namespace Legalweb\Legalwebcookie\Controller;
+namespace legalwebio\Legalwebcookie\Controller;
 
-use Legalweb\Legalwebcookie\Service\CookieService;
-use Legalweb\Legalwebcookie\Service\JsonFileService;
+use legalwebio\Legalwebcookie\Service\CookieService;
+use legalwebio\Legalwebcookie\Service\JsonFileService;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 
@@ -12,7 +12,7 @@ class UpdateController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
     /**
      * JsonFileService
      *
-     * @var \Legalweb\Legalwebcookie\Service\JsonFileService
+     * @var \legalwebio\Legalwebcookie\Service\JsonFileService
      */
     protected $jsonFileService = null;
 

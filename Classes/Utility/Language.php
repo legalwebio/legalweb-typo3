@@ -1,5 +1,5 @@
 <?php
-namespace Legalweb\Legalwebcookie\Utility;
+namespace legalwebio\Legalwebcookie\Utility;
 
 
 

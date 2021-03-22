@@ -52,7 +52,7 @@ lib.legalwebcookie {
     userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
     extensionName = Legalwebcookie
     pluginName = Pi1
-    vendorName = Legalweb
+    vendorName = legalwebio
 
     switchableControllerActions {
         Cookie {

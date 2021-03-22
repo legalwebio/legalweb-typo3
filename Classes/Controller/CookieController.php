@@ -1,17 +1,17 @@
 <?php
-namespace Legalweb\Legalwebcookie\Controller;
+namespace legalwebio\Legalwebcookie\Controller;
 //use Psr\Http\Message\ResponseInterface;
 //use TYPO3\CMS\Core\Utility\GeneralUtility;
-use Legalweb\Legalwebcookie\Service\CookieService;
-use Legalweb\Legalwebcookie\Domain\Model\Response;
-use Legalweb\Legalwebcookie\Domain\Respository\ResponseRepository;
+use legalwebio\Legalwebcookie\Service\CookieService;
+use legalwebio\Legalwebcookie\Domain\Model\Response;
+use legalwebio\Legalwebcookie\Domain\Respository\ResponseRepository;
 use TYPO3\CMS\Core\Page\PageRenderer;
-use Legalweb\Legalwebcookie\Utility\MainUtility;
-use Legalweb\Legalwebcookie\Utility\Language;
+use legalwebio\Legalwebcookie\Utility\MainUtility;
+use legalwebio\Legalwebcookie\Utility\Language;
 use TYPO3\CMS\Core\Context\Context;
 use TYPO3\CMS\Core\Site\Entity\SiteLanguage;
 use TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController;
-use Legalweb\Legalwebcookie\Service\JsonFileService;
+use legalwebio\Legalwebcookie\Service\JsonFileService;
 
 /***
  *
@@ -32,7 +32,7 @@ class CookieController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
     /**
      * JsonFileService
      *
-     * @var \Legalweb\Legalwebcookie\Service\JsonFileService
+     * @var \legalwebio\Legalwebcookie\Service\JsonFileService
      */
     protected $jsonFileService = null;
 

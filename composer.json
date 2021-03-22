@@ -1,10 +1,11 @@
 {
-    "name": "legalweb/legalwebcookie",
+    "name": "legalwebio/legalwebcookie",
     "type": "typo3-cms-extension",
     "description": "",
     "authors": [
         {
             "name": "legalwebio",
+			"homepage": "https://legalweb.io",
             "role": "Developer"
         }
     ],
@@ -13,16 +14,16 @@
     },
     "autoload": {
         "psr-4": {
-            "Legalweb\\Legalwebcookie\\": "Classes"
+            "legalwebio\\Legalwebcookie\\": "Classes"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Legalweb\\Legalwebcookie\\Tests\\": "Tests"
+            "legalwebio\\Legalwebcookie\\Tests\\": "Tests"
         }
     },
     "replace": {
-        "legalweb/legalwebcookie": "self.version",
+        "legalwebio/legalwebcookie": "self.version",
         "typo3-ter/legalwebcookie": "self.version"
     }
 }

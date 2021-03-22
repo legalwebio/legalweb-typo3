@@ -1,5 +1,5 @@
 <?php
-namespace Legalweb\Legalwebcookie\Tests\Unit\Controller;
+namespace legalwebio\Legalwebcookie\Tests\Unit\Controller;
 
 /**
  * Test case.
@@ -9,14 +9,14 @@ namespace Legalweb\Legalwebcookie\Tests\Unit\Controller;
 class CookieControllerTest extends \TYPO3\TestingFramework\Core\Unit\UnitTestCase
 {
     /**
-     * @var \Legalweb\Legalwebcookie\Controller\CookieController
+     * @var \legalwebio\Legalwebcookie\Controller\CookieController
      */
     protected $subject = null;
 
     protected function setUp()
     {
         parent::setUp();
-        $this->subject = $this->getMockBuilder(\Legalweb\Legalwebcookie\Controller\CookieController::class)
+        $this->subject = $this->getMockBuilder(\legalwebio\Legalwebcookie\Controller\CookieController::class)
             ->setMethods(['redirect', 'forward', 'addFlashMessage'])
             ->disableOriginalConstructor()
             ->getMock();

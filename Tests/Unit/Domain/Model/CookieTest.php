@@ -1,22 +1,22 @@
 <?php
-namespace Legalweb\Legalwebcookie\Tests\Unit\Domain\Model;
+namespace legalwebio\Legalwebcookie\Tests\Unit\Domain\Model;
 
 /**
  * Test case.
  *
- * @author Legalweb.io <office@legalweb.io>
+ * @author legalwebio.io <office@legalweb.io>
  */
 class CookieTest extends \TYPO3\TestingFramework\Core\Unit\UnitTestCase
 {
     /**
-     * @var \Legalweb\Legalwebcookie\Domain\Model\Cookie
+     * @var \legalwebio\Legalwebcookie\Domain\Model\Cookie
      */
     protected $subject = null;
 
     protected function setUp()
     {
         parent::setUp();
-        $this->subject = new \Legalweb\Legalwebcookie\Domain\Model\Cookie();
+        $this->subject = new \legalwebio\Legalwebcookie\Domain\Model\Cookie();
     }
 
     protected function tearDown()
