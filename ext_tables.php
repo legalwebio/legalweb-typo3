@@ -6,16 +6,16 @@ call_user_func(
     {
 
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-            'legalwebio.Legalwebcookie',
+            'Legalwebio.LegalWebTypo3',
             'Pi1',
-            'LegalWebCookie'
+            'LegalWebTypo3'
         );
 
 
         if (TYPO3_MODE === 'BE') {
 
             \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
-                'legalwebio.Legalwebcookie',
+                'Legalwebio.LegalWebTypo3',
                 'web', // Make module a submodule of 'web'
                 'Pi1', // Submodule key
                 '', // Position
@@ -24,18 +24,18 @@ call_user_func(
                 ],
                 [
                     'access' => 'user,group',
-                    'icon'   => 'EXT:legalwebcookie/Resources/Public/Icons/Extension.png',
-                    'labels' => 'LLL:EXT:legalwebcookie/Resources/Private/Language/locallang_legalcookie.xlf',
+                    'icon'   => 'EXT:legal_web_typo3/Resources/Public/Icons/Extension.png',
+                    'labels' => 'LLL:EXT:legal_web_typo3/Resources/Private/Language/locallang_legalcookie.xlf',
                 ]
             );
 
         }
 
-        $pluginSignature = str_replace('_', '', 'legalwebcookie') . '_pi1';
+        $pluginSignature = str_replace('_', '', 'legalwebtypo3') . '_pi1';
         $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$pluginSignature] = 'pi_flexform';
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($pluginSignature, 'FILE:EXT:legalwebcookie/Configuration/FlexForms/flexform_pi1.xml');
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($pluginSignature, 'FILE:EXT:legal_web_typo3/Configuration/FlexForms/flexform_pi1.xml');
 
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('legalwebcookie', 'Configuration/TypoScript', 'LegalWebCookie');
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('legal_web_typo3', 'Configuration/TypoScript/', 'Legal Web Typo3');
 
     }
 );

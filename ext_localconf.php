@@ -6,7 +6,7 @@ call_user_func(
     {
 
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-            'legalwebio.Legalwebcookie',
+            'Legalwebio.LegalWebTypo3',
             'Pi1',
             [
                 'Cookie' => 'list, imprint, contractWithDrawalService, contractWithDrawalDigital, contractCheckout, contractTerms, dpStatement',
@@ -26,12 +26,12 @@ call_user_func(
             wizards.newContentElement.wizardItems.plugins {
                 elements {
                     pi1 {
-                        iconIdentifier = legalwebcookie-plugin-pi1
-                        title = LLL:EXT:legalwebcookie/Resources/Private/Language/locallang_db.xlf:tx_legalwebcookie_pi1.name
-                        description = LLL:EXT:legalwebcookie/Resources/Private/Language/locallang_db.xlf:tx_legalwebcookie_pi1.description
+                        iconIdentifier = LegalWebTypo3-plugin-pi1
+                        title = LLL:EXT:legal_web_typo3/Resources/Private/Language/locallang_db.xlf:tx_legalwebtypo3_pi1.name
+                        description = LLL:EXT:legal_web_typo3/Resources/Private/Language/locallang_db.xlf:tx_legalwebtypo3_pi1.description
                         tt_content_defValues {
                             CType = list
-                            list_type = legalwebcookie_pi1
+                            list_type = legalwebtypo3_pi1
                         }
                     }
                 }
@@ -42,9 +42,9 @@ call_user_func(
 		$iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
 		
 			$iconRegistry->registerIcon(
-				'legalwebcookie-plugin-pi1',
+				'LegalWebTypo3-plugin-pi1',
 				\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-				['source' => 'EXT:legalwebcookie/Resources/Public/Icons/Extensions.png']
+				['source' => 'EXT:legal_web_typo3/Resources/Public/Icons/Extension.png']
 			);
 		
     }

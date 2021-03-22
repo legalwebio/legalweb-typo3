@@ -1,29 +1,29 @@
 {
-    "name": "legalwebio/legalwebcookie",
+    "name": "legalwebio/legal-web-typo3",
     "type": "typo3-cms-extension",
-    "description": "",
+    "description": "Legal web cloud integration for Typo 3",
     "authors": [
         {
-            "name": "legalwebio",
+            "name": "Legalwebio",
 			"homepage": "https://legalweb.io",
             "role": "Developer"
         }
     ],
     "require": {
-        "typo3/cms-core": "~9.5 | ~10.4.2"
+        "typo3/cms-core": "~9.5 | ~10.4.14"
     },
     "autoload": {
         "psr-4": {
-            "legalwebio\\Legalwebcookie\\": "Classes"
+            "Legalwebio\\LegalWebTypo3\\": "Classes"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "legalwebio\\Legalwebcookie\\Tests\\": "Tests"
+            "Legalwebio\\LegalWebTypo3\\Tests\\": "Tests"
         }
     },
     "replace": {
-        "legalwebio/legalwebcookie": "self.version",
-        "typo3-ter/legalwebcookie": "self.version"
+        "Legalwebio/LegalWebTypo3": "self.version",
+        "typo3-ter/LegalWebTypo3": "self.version"
     }
 }

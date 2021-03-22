@@ -1,21 +1,21 @@
 
-plugin.tx_legalwebcookie_pi1 {
+plugin.tx_legalwebtypo3_pi1 {
     view {
-        # cat=plugin.tx_legalwebcookie_pi1/file; type=string; label=Path to template root (FE)
-        templateRootPath = EXT:legalwebcookie/Resources/Private/Templates/
-        # cat=plugin.tx_legalwebcookie_pi1/file; type=string; label=Path to template partials (FE)
-        partialRootPath = EXT:legalwebcookie/Resources/Private/Partials/
-        # cat=plugin.tx_legalwebcookie_pi1/file; type=string; label=Path to template layouts (FE)
-        layoutRootPath = EXT:legalwebcookie/Resources/Private/Layouts/
+        # cat=plugin.tx_legalwebtypo3_pi1/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:legal_web_typo3/Resources/Private/Templates/
+        # cat=plugin.tx_legalwebtypo3_pi1/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:legal_web_typo3/Resources/Private/Partials/
+        # cat=plugin.tx_legalwebtypo3_pi1/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:legal_web_typo3/Resources/Private/Layouts/
     }
     persistence {
-        # cat=plugin.tx_legalwebcookie_pi1//a; type=string; label=Default storage PID
+        # cat=plugin.tx_legalwebtypo3_pi1//a; type=string; label=Default storage PID
         storagePid =
     }
     settings {
-        # cat=plugin.tx_legalwebcookie_pi1//a; type=string; label= Guid: The GUID
+        # cat=plugin.tx_legalwebtypo3_pi1//a; type=string; label= Guid: The GUID
         guid =
-        # cat=plugin.tx_legalwebcookie_pi1//a; type=string; label= Show Popup: Show Popup
+        # cat=plugin.tx_legalwebtypo3_pi1//a; type=string; label= Show Popup: Show Popup
         showPopup = 1
         
     }    

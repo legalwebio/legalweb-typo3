@@ -1,21 +1,21 @@
 <?php
-namespace legalwebio\Legalwebcookie\Controller;
+namespace Legalwebio\LegalWebTypo3\Controller;
 //use Psr\Http\Message\ResponseInterface;
 //use TYPO3\CMS\Core\Utility\GeneralUtility;
-use legalwebio\Legalwebcookie\Service\CookieService;
-use legalwebio\Legalwebcookie\Domain\Model\Response;
-use legalwebio\Legalwebcookie\Domain\Respository\ResponseRepository;
+use Legalwebio\LegalWebTypo3\Service\CookieService;
+use Legalwebio\LegalWebTypo3\Domain\Model\Response;
+use Legalwebio\LegalWebTypo3\Domain\Respository\ResponseRepository;
 use TYPO3\CMS\Core\Page\PageRenderer;
-use legalwebio\Legalwebcookie\Utility\MainUtility;
-use legalwebio\Legalwebcookie\Utility\Language;
+use Legalwebio\LegalWebTypo3\Utility\MainUtility;
+use Legalwebio\LegalWebTypo3\Utility\Language;
 use TYPO3\CMS\Core\Context\Context;
 use TYPO3\CMS\Core\Site\Entity\SiteLanguage;
 use TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController;
-use legalwebio\Legalwebcookie\Service\JsonFileService;
+use Legalwebio\LegalWebTypo3\Service\JsonFileService;
 
 /***
  *
- * This file is part of the "LegalWebCookie" Extension for TYPO3 CMS.
+ * This file is part of the "LegalWebTypo3" Extension for TYPO3 CMS.
  *
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.
@@ -32,7 +32,7 @@ class CookieController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
     /**
      * JsonFileService
      *
-     * @var \legalwebio\Legalwebcookie\Service\JsonFileService
+     * @var \Legalwebio\LegalWebTypo3\Service\JsonFileService
      */
     protected $jsonFileService = null;
 

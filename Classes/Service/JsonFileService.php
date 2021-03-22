@@ -1,6 +1,6 @@
 <?php
 
-namespace legalwebio\Legalwebcookie\Service;
+namespace Legalwebio\LegalWebTypo3\Service;
 
 
 
@@ -8,7 +8,7 @@ use Psr\Http\Message\ResponseInterface;
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
-use legalwebio\Legalwebcookie\Utility\MainUtility;
+use Legalwebio\LegalWebTypo3\Utility\MainUtility;
 
 
 
@@ -34,7 +34,7 @@ class JsonFileService {
 
         $extbaseFrameworkConfiguration = $this->configurationManager->getConfiguration(\TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT);
 
-        $this->guid =  $extbaseFrameworkConfiguration['plugin.']['tx_legalwebcookie_pi1.']['settings.']['guid'];
+        $this->guid =  $extbaseFrameworkConfiguration['plugin.']['tx_legalwebtypo3_pi1.']['settings.']['guid'];
 
       
 
@@ -44,7 +44,7 @@ class JsonFileService {
 
         $host = MainUtility::host();
 
-        return "https://{$host}?tx_legalwebcookie_pi1[action]=execute&tx_legalwebcookie_pi1[controller]=Update&type=1645";
+        return "https://{$host}?tx_legalwebtypo3_pi1[action]=execute&tx_legalwebtypo3_pi1[controller]=Update&type=1645";
 
     }
 
@@ -58,7 +58,7 @@ class JsonFileService {
 
 
 
-        $path = \TYPO3\CMS\Core\Utility\GeneralUtility::getFileAbsFileName("EXT:legalwebcookie/Resources/Public/Json/data{$date}.json") ;
+        $path = \TYPO3\CMS\Core\Utility\GeneralUtility::getFileAbsFileName("EXT:legal_web_typo3/Resources/Public/Json/data{$date}.json") ;
 
 
 
@@ -70,7 +70,7 @@ class JsonFileService {
 
     private function deleteResources () {
 
-        $path = \TYPO3\CMS\Core\Utility\GeneralUtility::getFileAbsFileName("EXT:legalwebcookie/Resources/Public/Json/") ;
+        $path = \TYPO3\CMS\Core\Utility\GeneralUtility::getFileAbsFileName("EXT:legal_web_typo3/Resources/Public/Json/") ;
 
 
 

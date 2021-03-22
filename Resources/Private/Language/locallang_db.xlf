@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2020-08-21T09:25:36Z" product-name="legalwebcookie">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-08-21T09:25:36Z" product-name="LegalWebTypo3">
 		<header/>
 		<body>
-			<trans-unit id="tx_legalwebcookie_pi1.name">
-				<source>LegalWebCookie</source>
+			<trans-unit id="tx_legalwebtypo3_pi1.name">
+				<source>LegalWebTypo3</source>
 			</trans-unit>
-			<trans-unit id="tx_legalwebcookie_pi1.description">
+			<trans-unit id="tx_legalwebtypo3_pi1.description">
 				<source></source>
 			</trans-unit>
 		</body>

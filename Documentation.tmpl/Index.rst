@@ -32,11 +32,11 @@
    ---------------------------------------------------------------
 
 =============================================================
-LegalWebCookie
+LegalWebTypo3
 =============================================================
 
 :Extension Key:
-    legalwebcookie
+    LegalWebTypo3
 
 :Version:
     |release|
@@ -64,7 +64,7 @@ LegalWebCookie
 
 **Community Documentation:**
 
-    This documentation is community documentation for the TYPO3 extension LegalWebCookie
+    This documentation is community documentation for the TYPO3 extension LegalWebTypo3
 
     It is maintained as part of this third party extension.
 

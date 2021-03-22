@@ -1,15 +1,15 @@
 
-plugin.tx_legalwebcookie_pi1 {
+plugin.tx_legalwebtypo3_pi1 {
     view {
         templateRootPaths.0 = EXT:{extension.shortExtensionKey}/Resources/Private/Templates/
-        templateRootPaths.1 = {$plugin.tx_legalwebcookie_pi1.view.templateRootPath}
-        partialRootPaths.0 = EXT:legalwebcookie/Resources/Private/Partials/
-        partialRootPaths.1 = {$plugin.tx_legalwebcookie_pi1.view.partialRootPath}
-        layoutRootPaths.0 = EXT:tx_legalwebcookie/Resources/Private/Layouts/
-        layoutRootPaths.1 = {$plugin.tx_legalwebcookie_pi1.view.layoutRootPath}
+        templateRootPaths.1 = {$plugin.tx_legalwebtypo3_pi1.view.templateRootPath}
+        partialRootPaths.0 = EXT:legal_web_typo3/Resources/Private/Partials/
+        partialRootPaths.1 = {$plugin.tx_legalwebtypo3_pi1.view.partialRootPath}
+        layoutRootPaths.0 = EXT:legal_web_typo3/Resources/Private/Layouts/
+        layoutRootPaths.1 = {$plugin.tx_legalwebtypo3_pi1.view.layoutRootPath}
     }
     persistence {
-        storagePid = {$plugin.tx_legalwebcookie_pi1.persistence.storagePid}
+        storagePid = {$plugin.tx_legalwebtypo3_pi1.persistence.storagePid}
         #recursive = 1
     }
     features {
@@ -23,8 +23,8 @@ plugin.tx_legalwebcookie_pi1 {
         #callDefaultActionIfActionCantBeResolved = 1
     }
     settings{
-        guid = {$plugin.tx_legalwebcookie_pi1.settings.guid}
-        showPopup = {$plugin.tx_legalwebcookie_pi1.settings.showPopup}
+        guid = {$plugin.tx_legalwebtypo3_pi1.settings.guid}
+        showPopup = {$plugin.tx_legalwebtypo3_pi1.settings.showPopup}
 
     }
 
@@ -44,15 +44,29 @@ ajaxcookie_page {
         admPanel = 0
     }
 
-    10 < tt_content.list.20.legalwebcookie_pi1
+    10 < tt_content.list.20.LegalWebTypo3_pi1
+}
+
+lib.legalwebtypo3 = USER
+lib.legalwebtypo3 {
+    userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+    extensionName = LegalWebTypo3
+    pluginName = Pi1
+    vendorName = Legalwebio
+
+    switchableControllerActions {
+        Cookie {
+            1 = list
+        }
+    }
 }
 
 lib.legalwebcookie = USER
 lib.legalwebcookie {
     userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-    extensionName = Legalwebcookie
+    extensionName = LegalWebTypo3
     pluginName = Pi1
-    vendorName = legalwebio
+    vendorName = Legalwebio
 
     switchableControllerActions {
         Cookie {
@@ -62,7 +76,7 @@ lib.legalwebcookie {
 }
 
 # these classes are only used in auto-generated templates
-plugin.tx_legalwebcookie._CSS_DEFAULT_STYLE (
+plugin.tx_legalwebtypo3._CSS_DEFAULT_STYLE (
     textarea.f3-form-error {
         background-color:#FF9F9F;
         border: 1px #FF0000 solid;
@@ -73,16 +87,16 @@ plugin.tx_legalwebcookie._CSS_DEFAULT_STYLE (
         border: 1px #FF0000 solid;
     }
 
-    .tx-legalwebcookie table {
+    .tx-LegalWebTypo3 table {
         border-collapse:separate;
         border-spacing:10px;
     }
 
-    .tx-legalwebcookie table th {
+    .tx-LegalWebTypo3 table th {
         font-weight:bold;
     }
 
-    .tx-legalwebcookie table td {
+    .tx-LegalWebTypo3 table td {
         vertical-align:top;
     }
 

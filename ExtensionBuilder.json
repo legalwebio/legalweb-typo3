@@ -6,19 +6,19 @@
         "emConf": {
             "category": "plugin",
             "custom_category": "",
-            "dependsOn": "typo3 => 9.5.0-10.4.6\n",
+            "dependsOn": "typo3 => 9.5.0-10.4.14\n",
             "disableLocalization": true,
             "disableVersioning": false,
             "skipGenerateDocumentationTemplate": false,
             "sourceLanguage": "en",
-            "state": "alpha",
+            "state": "beta",
             "targetVersion": "9.5.0-9.5.99",
             "version": "1.0.4"
         },
-        "extensionKey": "legalwebcookie",
-        "name": "LegalWebCookie",
-        "originalExtensionKey": "legalwebcookie",
-        "originalVendorName": "legalwebio",
+        "extensionKey": "legal_web_typo3",
+        "name": "legal_web_typo3",
+        "originalExtensionKey": "legal_web_typo3",
+        "originalVendorName": "Legalwebio",
         "persons": [
             {
                 "company": "Legalweb",
@@ -36,10 +36,10 @@
                 },
                 "description": "",
                 "key": "pi1",
-                "name": "LegalWebCookie"
+                "name": "LegalWebTypo3"
             }
         ],
-        "vendorName": "legalwebio"
+        "vendorName": "Legalwebio"
     },
     "wires": [],
     "log": {

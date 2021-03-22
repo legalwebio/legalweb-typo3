@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="EXT:legalwebcookie/Resources/Private/Language/locallang_mod" date="2020-12-05T14:48:16Z" product-name="legalwebcookie">
+    <file source-language="en" datatype="plaintext" original="EXT:legal_web_typo3/Resources/Private/Language/locallang_mod" date="2020-12-05T14:48:16Z" product-name="LegalWebTypo3">
         <header/>
         <body>
             <trans-unit id="mlang_labels_tabdescr" resname="mlang_labels_tabdescr">
